@@ -7,6 +7,17 @@
     background-color: var(--base-500);
 }
 
+#project h2 {
+    font: var(--subtitle);
+    color: var(--principal-red);
+    margin-bottom: 8px;
+}
+
+#project p {
+    font: var(--title-md);
+    color: var(--base-100);
+}
+
 #project header {
     text-align: center; /* Espaço entre o título da seção e o grid de cards */
     margin-bottom: 56px;
@@ -27,14 +38,17 @@
 .project-card {
     text-decoration: none;
     background-color: var(--base-400); /* Cor de fundo do card*/
+    
+    border: 1.5px solid transparent;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px, 3px rgba(0, 0, 0, 0.08);
 }
 
 .project-card:hover {
-    box-shadow: 0 0 0 2px var(--principal-blue), 0 4px 6px rgba(0, 0, 0, 0.1), 0, 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1.5px solid var(--base-300);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+    0 1px 3px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -45,25 +59,26 @@
 }
 
 .thumbnail-container {
-     background-color: var(--base-400); /* Cor de fundo que você quer dentro do padding */
+    background-color: var(--base-400); /* Cor de fundo que você quer dentro do padding */
     padding: 12px 12px 20px 12px; /* Espaçamento interno (topo, lados, fundo) */
     overflow: hidden; /* Garante que a imagem seja cortada com o border-radius */
     border-radius: 8px 8px 0 0;
 }
 
-.card-content {
+#project .card-content {
     padding: 0 16px;
     text-align: left;
 }
 
-.card-content h3 {
+#project .card-content h3 {
     font: var(--title-sm);
     color: var(--base-100);
     margin-bottom: 8px;
 }
 
-.card-content p {
+#project .card-content p {
     font: var(--text-sm);
     color: var(--base-200);
     margin-bottom: 21px;
 }
+
