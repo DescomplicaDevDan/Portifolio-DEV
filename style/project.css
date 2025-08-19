@@ -1,0 +1,20 @@
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a header e o grid */
+    padding: 72px 120px; /* Espaçamento vertical e horizontal da seção */
+}
+
+#project header {
+    text-align: center; /* Espaço entre o título da seção e o grid de cards */
+    margin-bottom: 56px;
+}
+
+.project-grid {
+    display: grid;
+
+     /* Cria 3 colunas de largura igual para replicar o design do Figma. */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 24px; /* Espaçamento entre os cards */    
+}
