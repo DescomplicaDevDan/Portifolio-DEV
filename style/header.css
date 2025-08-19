@@ -1,3 +1,93 @@
+header {
+    display: flex; /* Adicione as propriedades Flexbox ao seu header no CSS. Isso vai permitir que você centralize o conteúdo de forma fácil. */
+    flex-direction: column;  /* Organiza os itens em uma coluna (um abaixo do outro) */
+    align-items: center; 
+    text-align: center;
+    padding: 120px 163px 57px;
+}
+
 #intro {
     background-image: url(../assets/Background_Intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar-container { /* Transformar o contêiner pai (.avatar-container) em um ponto de referência com position: relative; */
+    margin-bottom: 56px;
+    position: relative;
+    display: inline-block; /* Garante que o container se ajuste ao tamanho do conteúdo */
+
+}
+
+.avatar {
+    width: 87.27px;
+    height: 87.27px;
+    border: 2px solid var(--principal-red);
+    border-radius: 50%; /* Esta propriedade cria o círculo */
+    object-fit: cover;  /* Mantém a imagem em formato circular */
+    padding: 4.6px;
+    
+}
+
+.code-icon {
+    position: absolute;
+    bottom: 0.5px; /* Ajuste a distância da borda inferior */
+    right: -3.5px; /* Ajuste a distância da borda direita */
+    z-index: 1; /* Garante que o ícone fique na frente da foto */
+    width: 32px; /* Defina a largura do ícone */
+    height: 32px; /* Defina a altura do ícone */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font: var(--title-lg);
+    color: var(--base-100);
+    
+}
+
+h2 {  
+    margin-bottom: 8px; 
+    font: var(--subtitle);
+    color: var(--base-200);
+    
+}
+
+h2 span {
+    color: var(--principal-red);
+}
+
+p {
+    margin-bottom: 80px;
+    font: var(--text-sm);
+    color: var(--base-300);
+}
+
+.logo-tags {
+    display: flex;
+    gap: 16px; /* Adiciona espaçamento entre as tags */
+    align-items: center;
+    justify-content: center;  /* centraliza o container inteiro na página: */
+}
+
+.logo-tags .tag { /* Estilo para cada tag individual */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adiciona espaçamento entre o ícone e o texto */
+
+    /* Propriedades visuais para a aparência de "pílula" */
+    background-color: var(--base-400);
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+span {
+    font: var(--text-md);
+    color: var(--base-200);
+}
+
+.seta-container {
+    padding-top: 94px;
+    display: flex;
+    justify-content: center;
 }
