@@ -1,4 +1,4 @@
-# Portfólio Martina Santos
+# Portfólio DEV
 
 Este é um projeto de portfólio pessoal, com um design moderno e responsivo, criado para apresentar minhas habilidades, projetos e informações de contato como Desenvolvedora Fullstack.
 
