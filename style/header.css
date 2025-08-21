@@ -3,7 +3,7 @@ header {
     flex-direction: column;  /* Organiza os itens em uma coluna (um abaixo do outro) */
     align-items: center; 
     text-align: center;
-    padding: 120px 163px 57px;
+    
 }
 
 #intro {
@@ -11,6 +11,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 120px 163px 57px;
 }
 
 .avatar-container { /* Transformar o contêiner pai (.avatar-container) em um ponto de referência com position: relative; */
@@ -63,11 +64,19 @@ header {
     color: var(--base-300);
 }
 
+.intro-container {
+    /* Usando flexbox no container pai para organizar os elementos em uma coluna */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo do container */
+}
+
 .logo-tags {
     display: flex;
     gap: 16px; /* Adiciona espaçamento entre as tags */
     align-items: center;
     justify-content: center;  /* centraliza o container inteiro na página: */
+    margin-bottom: 94px;
 }
 
 .logo-tags .tag { /* Estilo para cada tag individual */
@@ -86,8 +95,7 @@ span {
     color: var(--base-200);
 }
 
-.seta-container {
-    padding-top: 94px;
-    display: flex;
-    justify-content: center;
+.seta-container img {
+    width: 32px; /* Define o tamanho da imagem da seta para 32px */
+    height: 32px; /* Define a altura da imagem da seta para 32px */
 }
