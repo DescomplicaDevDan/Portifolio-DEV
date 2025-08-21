@@ -96,6 +96,6 @@ span {
 }
 
 .seta-container img {
-    width: 32px; /* Define o tamanho da imagem da seta para 32px */
-    height: 32px; /* Define a altura da imagem da seta para 32px */
+    width: 32px;
+    height: 32px; 
 }
